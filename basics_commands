@@ -1,1 +1,2 @@
 systeminfo #show system info
+type <filename> #show file contents
