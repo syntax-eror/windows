@@ -1,2 +1,4 @@
 systeminfo #show system info
 type <filename> #show file contents
+tasklist #processes
+wmic #
