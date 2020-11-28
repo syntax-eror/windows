@@ -1,0 +1,15 @@
+#multiple data streams
+defaultFile:secretFile
+c:\ type NTDS.dit > Manual.docx:NTDIS.dit
+PS c:\ Get-Content -Path .\NTDS.dit | Set-Content -Path .\Manual.docx -Stream NTDS.dit
+
+c:\ type c:\tools\nc.exe > test1.txt:nc.exe
+c:\ wmic process call create c:\temp\test1.txt:nc.exe
+
+dir /r #show add. data streams
+
+#data streams have legitimate uses as well
+#to look for these:
+dir /r
+Get-Item * -Stream *
+Get-ChildItem -Recurse | ForEach { Get-Item $_.FullName -Stream * } | Where stream -ne ':DATA'
