@@ -1,4 +1,5 @@
+echo "text" #show text ; echo "text" > <filename> #create new file with "text"
 systeminfo #show system info
-type <filename> #show file contents
 tasklist #processes
+type <filename> #show file contents
 wmic #
