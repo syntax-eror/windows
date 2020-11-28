@@ -1,0 +1,4 @@
+sc start <servicename>
+sc stop <servicename>
+sc query <servicename>
+sc config <servicename> start= disabled
