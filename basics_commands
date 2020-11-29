@@ -1,4 +1,5 @@
 copy <filename> <new location>
+dir "\searchterm*" /s #/s - subdirectories
 echo "text" #show text ; echo "text" > <filename> #create new file with "text"
 runas #run cmd as another user - runas /user:localhost\administrator <command>
 start #launch window to run specified command
