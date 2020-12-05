@@ -6,4 +6,6 @@ start #launch window to run specified command
 systeminfo #show system info
 tasklist #processes
 type <filename> #show file contents
+wevtutil #search log entries command line
+wevtutil qe security f:/text | more
 wmic #
