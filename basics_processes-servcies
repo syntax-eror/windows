@@ -1,4 +1,11 @@
 sc start <servicename>
 sc stop <servicename>
-sc query <servicename>
+sc query <servicename> | more
 sc config <servicename> start= disabled / auto #space between = and disabled or auto
+
+tasklist /v #verbose output
+taskslist /m /fi "pid eq <pid>" #get DLLs associated with PID
+
+wmic process list brief/full
+wmic process get <attributes>
+wmic process get name,parentprocessid,processid #can use any specific fields
