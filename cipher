@@ -1,2 +1,0 @@
-cipher /w:<driveletter>:\ REM wipe free space on a drive
-cipher /w:c:\
