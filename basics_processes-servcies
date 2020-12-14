@@ -10,3 +10,4 @@ tasklist /svc | more #show services
 wmic process list brief/full
 wmic process get <attributes>
 wmic process get name,parentprocessid,processid #can use any specific fields
+wmic process where processid=xx get (parentprocessid, etc) #use * to list all fields that can be filtered
