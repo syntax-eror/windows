@@ -9,3 +9,8 @@ type <filename> #show file contents
 wevtutil #search log entries command line
 wevtutil qe security f:/text | more
 wmic #
+
+-#SERVICE INFO#-
+net start
+sc query | more
+tasklist /svc
