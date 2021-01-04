@@ -1,0 +1,5 @@
+net use \\targetip #start SMB sessions
+net use \\targetip\sharename
+net use \\127.0.0.1\$admin <password> /u:username
+
+net session #list active SMB sessions
